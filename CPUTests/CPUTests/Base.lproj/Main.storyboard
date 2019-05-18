@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3E9-mo-hCc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matrix-->
+        <scene sceneID="BoR-aa-S4K">
+            <objects>
+                <viewController id="Mff-h2-PNV" customClass="MatrixVC" customModule="CPUTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pa9-8f-MFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLQ-OE-tsk">
+                                <rect key="frame" x="127" y="304" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="vector matrix me!"/>
+                                <connections>
+                                    <action selector="onVectorMatrix:" destination="Mff-h2-PNV" eventType="touchUpInside" id="0Mm-bQ-4OH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="crd-0r-57l">
+                                <rect key="frame" x="114" y="235" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="sequential matrix me!"/>
+                                <connections>
+                                    <action selector="onSeqMatrix:" destination="Mff-h2-PNV" eventType="touchUpInside" id="WCa-HG-sh0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C9R-T6-F1P"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Matrix" id="eSo-xE-p1p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKE-jX-7HQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-348" y="1003"/>
+        </scene>
+        <!--Saxpy-->
+        <scene sceneID="tT1-w7-CY2">
+            <objects>
+                <viewController title="Saxpy" id="bFN-qa-nqB" customClass="SaxpyVC" customModule="CPUTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="orV-FX-bcR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41I-Xu-Raw">
+                                <rect key="frame" x="115" y="218" width="144" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="sequential saxpy me!"/>
+                                <connections>
+                                    <action selector="doSeqSaxpy:" destination="bFN-qa-nqB" eventType="touchUpInside" id="r59-XY-Jh9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzm-GA-ERZ">
+                                <rect key="frame" x="129" y="301" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="vector saxpy me!"/>
+                                <connections>
+                                    <action selector="doVectorSaxpy:" destination="bFN-qa-nqB" eventType="touchUpInside" id="a5z-3N-jhP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bFK-4c-Agd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Saxpy" id="VTW-kR-EGF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGq-AY-BIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="460" y="1003"/>
+        </scene>
+        <!--Sigmoid-->
+        <scene sceneID="6EA-zX-kV5">
+            <objects>
+                <viewController title="Sigmoid" id="UAn-1b-2UQ" customClass="SigmoidVC" customModule="CPUTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oRF-FX-exb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLk-Hd-2tE">
+                                <rect key="frame" x="122" y="342" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="vector sigmoid me!"/>
+                                <connections>
+                                    <action selector="doVectorSigmoid:" destination="UAn-1b-2UQ" eventType="touchUpInside" id="clM-pM-gmS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-oJ-Lq7">
+                                <rect key="frame" x="108" y="284" width="158" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="sequential sigmoid me!"/>
+                                <connections>
+                                    <action selector="doSeqSigmoid:" destination="UAn-1b-2UQ" eventType="touchUpInside" id="KSf-h5-8yK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kxb-Dl-Bi5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sigmoid" id="95j-JN-mi8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kcn-P1-MtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="438"/>
+        </scene>
+        <!--Blur-->
+        <scene sceneID="eOX-2X-bEj">
+            <objects>
+                <viewController title="Blur" id="26u-hb-14j" customClass="BlurVC" customModule="CPUTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ot2-o5-HzI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="47l-F1-hUy">
+                                <rect key="frame" x="67" y="213" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISx-0y-RKD">
+                                <rect key="frame" x="159" y="152" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="blur me!"/>
+                                <connections>
+                                    <action selector="onClick:" destination="26u-hb-14j" eventType="touchUpInside" id="oVt-kB-HpY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vLn-3k-Dlk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blur" id="OtI-f3-03n"/>
+                    <connections>
+                        <outlet property="imageView" destination="47l-F1-hUy" id="wb7-Rc-XFi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmW-9D-9Mn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="-227"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="r2Q-0H-kvT">
+            <objects>
+                <tabBarController id="3E9-mo-hCc" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PxF-yJ-5fV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="26u-hb-14j" kind="relationship" relationship="viewControllers" id="1Nz-xD-PlF"/>
+                        <segue destination="UAn-1b-2UQ" kind="relationship" relationship="viewControllers" id="7X9-JU-FSq"/>
+                        <segue destination="bFN-qa-nqB" kind="relationship" relationship="viewControllers" id="Tjf-QA-2S5"/>
+                        <segue destination="Mff-h2-PNV" kind="relationship" relationship="viewControllers" id="qHy-QG-Nva"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9z-MZ-mm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="105"/>
+        </scene>
+    </scenes>
+</document>
