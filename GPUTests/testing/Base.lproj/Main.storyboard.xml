@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YjO-Kg-r6G">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="I4Y-zh-O6p">
+            <objects>
+                <viewController id="zka-ER-Y6m" customClass="SigmoidVC" customModule="testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="542-jw-csf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I4D-q5-tO3">
+                                <rect key="frame" x="67" y="255" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c06-Lo-ZOK">
+                                <rect key="frame" x="163" y="110" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sigmoid"/>
+                                <connections>
+                                    <action selector="testButtonPressed:" destination="zka-ER-Y6m" eventType="touchUpInside" id="soz-OK-aYJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="la5-Ny-QqN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="Okx-da-TFz"/>
+                    <connections>
+                        <outlet property="uiimageout" destination="I4D-q5-tO3" id="9tR-o9-F7g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="616-nJ-tDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="25.637181409295355"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="WUU-bC-gd6">
+            <objects>
+                <viewController id="hsg-T2-sNP" customClass="SaxpyVC" customModule="testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wDI-Yy-T4H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-ow-HBj">
+                                <rect key="frame" x="67" y="250" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koa-u8-1Dc">
+                                <rect key="frame" x="166" y="119" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Saxpy"/>
+                                <connections>
+                                    <action selector="testButtonPressed:" destination="hsg-T2-sNP" eventType="touchUpInside" id="9S3-2o-pYL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oyW-mp-3Wx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="drQ-Fk-UE8"/>
+                    <connections>
+                        <outlet property="uiimageout" destination="zeB-ow-HBj" id="gZ1-4X-GuW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ub-eb-6Ra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="922"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tzp-ZB-kdq">
+            <objects>
+                <tabBarController id="YjO-Kg-r6G" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gcU-YD-rgR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hsg-T2-sNP" kind="relationship" relationship="viewControllers" id="QJi-75-jlD"/>
+                        <segue destination="zka-ER-Y6m" kind="relationship" relationship="viewControllers" id="X6W-qn-Cen"/>
+                        <segue destination="yqg-IG-M1a" kind="relationship" relationship="viewControllers" id="9ov-xB-JtZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ANf-mF-qQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727" y="591"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="IUZ-Wc-gsg">
+            <objects>
+                <viewController id="yqg-IG-M1a" customClass="BlurVC" customModule="testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hY5-mY-R8J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DST-fg-iKO">
+                                <rect key="frame" x="67" y="249" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmr-it-1S1">
+                                <rect key="frame" x="58" y="114" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blur MPS Library"/>
+                                <connections>
+                                    <action selector="testButtonPressed:" destination="yqg-IG-M1a" eventType="touchUpInside" id="YLQ-Hw-xaT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssY-nZ-kTs">
+                                <rect key="frame" x="205" y="114" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blur Raw Metal"/>
+                                <connections>
+                                    <action selector="testButtonPressed2:" destination="yqg-IG-M1a" eventType="touchUpInside" id="iWS-LY-dB4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wfj-Lg-n9F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NDp-Rq-9Io"/>
+                    <connections>
+                        <outlet property="uiimageout" destination="DST-fg-iKO" id="Zxe-mM-al8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5r-h5-qxp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-727" y="1330"/>
+        </scene>
+    </scenes>
+</document>
